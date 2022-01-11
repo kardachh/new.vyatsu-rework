@@ -5,3 +5,16 @@
 .top-menu {
   width: calc(100% - 18rem);
 }
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.left-menu-cont-items {
+  height: calc(90vh - 31rem);
+}
