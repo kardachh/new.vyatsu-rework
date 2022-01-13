@@ -20,67 +20,27 @@ require_once("./header.php")
 
     <!-- arrow menu -->
     <div class="w-full h-16 border-b border-white justify-evenly items-center text-white flex">
-        <div class="cursor-pointer w-6 flex justify-center">
+        <div id="left-menu-left-arrow" class="cursor-pointer w-6 flex justify-center">
             <img src="assets/arrow_left.svg" />
         </div>
-        <div>1. Текст</div>
-        <div class="cursor-pointer w-6 flex justify-center">
+        <div class="flex">
+            <span id="left-menu-number-top" class="mr-1"></span>
+            <div class="left-menu-name">Текст</div>
+        </div>
+        <div id="left-menu-right-arrow" class="cursor-pointer w-6 flex justify-center">
             <img class="rotate-180" src="assets/arrow_left.svg" />
         </div>
     </div>
 
     <!-- menu item list -->
-    <div class="overflow-auto left-menu-cont-items scrollbar-thin scrollbar-color-main">
-        <div class="w-full h-16 px-5 border-t first:border-t-0 border-white flex justify-start items-center text-white text-[14px] sm:text-base cursor-pointer ">
-            Расписание
-        </div>
-        <div class="w-full h-16 px-5 border-t first:border-t-0 border-white flex justify-start items-center text-white text-[14px] sm:text-base cursor-pointer ">
-            Расписание
-        </div>
-        <div class="w-full h-16 px-5 border-t first:border-t-0 border-white flex justify-start items-center text-white text-[14px] sm:text-base cursor-pointer ">
-            Расписание
-        </div>
-        <div class="w-full h-16 px-5 border-t first:border-t-0 border-white flex justify-start items-center text-white text-[14px] sm:text-base cursor-pointer ">
-            Расписание
-        </div>
-        <div class="w-full h-16 px-5 border-t first:border-t-0 border-white flex justify-start items-center text-white text-[14px] sm:text-base cursor-pointer ">
-            Расписание
-        </div>
-        <div class="w-full h-16 px-5 border-t first:border-t-0 border-white flex justify-start items-center text-white text-[14px] sm:text-base cursor-pointer ">
-            Расписание
-        </div>
-        <div class="w-full h-16 px-5 border-t first:border-t-0 border-white flex justify-start items-center text-white text-[14px] sm:text-base cursor-pointer ">
-            Расписание
-        </div>
-        <div class="w-full h-16 px-5 border-t first:border-t-0 border-white flex justify-start items-center text-white text-[14px] sm:text-base cursor-pointer ">
-            Расписание
-        </div>
-        <div class="w-full h-16 px-5 border-t first:border-t-0 border-white flex justify-start items-center text-white text-[14px] sm:text-base cursor-pointer ">
-            Расписание
-        </div>
-    </div>
+    <div id="left-menu-items" class="overflow-auto left-menu-cont-items scrollbar-thin scrollbar-color-main"></div>
 
     <div class="h-72  w-full absolute bottom-20 sm:bottom-0 p-7 flex flex-col justify-between">
         <!-- number-menu -->
         <div class="flex flex-col justify-between items-start">
-            <div class="text-white flex items-center">
-                <div class="mr-4 last:mr-0 font-bold text-lg">
-                    01
-                </div>
-                <div class="mr-4 last:mr-0">
-                    02
-                </div>
-                <div class="mr-4 last:mr-0">
-                    03
-                </div>
-                <div class="mr-4 last:mr-0">
-                    04
-                </div>
-                <div class="mr-4 last:mr-0">
-                    05
-                </div>
+            <div id="number-menu" class="text-white flex items-center">
             </div>
-            <div class="font-bold text-white">
+            <div class="left-menu-name font-bold text-white">
                 Текст
             </div>
         </div>
@@ -127,99 +87,18 @@ require_once("./header.php")
                 <img src="./assets/search.svg" />
             </div>
         </div>
-        <!-- olf – often looking for -->
         <div class="relative flex items-center mt-3">
-
-            <div class="left-arrow flex justify-start absolute h-full w-10 bg-gradient-to-l from-transparent to-white">
+            <div class="left-arrow hidden justify-start absolute h-full w-10 bg-gradient-to-l from-transparent to-white">
                 <img src="./assets/arrow_down.svg" style="transform:rotate(90deg); width: 20px;" />
             </div>
-            <div class="right-arrow flex justify-end absolute right-0 h-full w-10 bg-gradient-to-r from-transparent to-white">
+            <div class="right-arrow hidden justify-end absolute right-0 h-full w-10 bg-gradient-to-r from-transparent to-white">
                 <img src="./assets/arrow_down.svg" style="transform:rotate(-90deg); width: 20px;" />
             </div>
-            <div class="flex overflow-auto scrollbar-hide olf-pages whitespace-nowrap">
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>Расписание</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>Зачетная книжка</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>Опросы</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>Календарь абитуриента</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-                <a href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-                    <div>День открытых дверей</div>
-                </a>
-            </div>
+            <div id="favorite-pages" class="flex overflow-auto scrollbar-hide whitespace-nowrap"></div>
         </div>
     </div>
     <!-- user -->
-    <div class="hidden sm:flex items-center justify-evenly px-6 xl:w-[350px]">
+    <div class="hidden sm:flex items-center justify-evenly px-6  w-full sm:w-1/4 md:w-1/4 xl:w-1/3 2xl:w-1/4">
         <!-- avatar -->
         <div class="flex items-center justify-center w-16 relative">
             <img class="rounded-full" src="./assets/2021-12-06 10.53.01.jpg" />
@@ -235,7 +114,7 @@ require_once("./header.php")
                 <div>Сотрудник</div>
             </div>
             <div class="cursor-pointer flex justify-center items-center">
-                <div class ="w-10 h-10 flex justify-center items-center">
+                <div class="w-10 h-10 flex justify-center items-center">
                     <img src="assets/arrow_down.svg" />
                 </div>
             </div>
@@ -271,7 +150,7 @@ require_once("./header.php")
 <script>
     const leftArrow = $(".left-arrow")
     const rightArrow = $(".right-arrow")
-    const scrollCont = $(".olf-pages")
+    const scrollCont = $("#favorite-pages")
 
     let scrollPos = 0;
 
@@ -294,10 +173,10 @@ require_once("./header.php")
     $(scrollCont).scroll(checkScroll)
 
     $(leftArrow).on("click", () => $(scrollCont).animate({
-        scrollLeft: scrollPos - 200
+        scrollLeft: scrollPos - 250
     }, 500, 'swing'))
     $(rightArrow).on("click", () => $(scrollCont).animate({
-        scrollLeft: scrollPos + 200
+        scrollLeft: scrollPos + 250
     }, 500, 'swing'))
 </script>
 
@@ -322,4 +201,139 @@ require_once("./header.php")
 
     $(burger).click(() => onClickBurger())
     $(close).click(() => onClickClose())
+</script>
+
+<!-- динамическое заполнение и работа left-menu -->
+<script>  
+    const numberMenu = $('#number-menu')
+    const leftMenuName = $('.left-menu-name')
+    const leftMenuItems = $('#left-menu-items')
+    const leftMenuNumberTop = $('#left-menu-number-top')
+    const leftMenuLeftArrow = $('#left-menu-left-arrow')
+    const leftMenuRightArrow = $('#left-menu-right-arrow')
+
+    let currentLeftMenu = 0;
+    //! для отладки
+    const leftMenuInfo = [{
+            name: "Наш университет",
+            links: [{
+                name: "Сведения об ОО",
+                url: "https://new.vyatsu.ru/sveden/"
+            }, ],
+        },
+        {
+            name: "Поступление",
+            links: [{
+                    name: "Специальности и направления подготовки",
+                    url: "https://new.vyatsu.ru/admission/admission_special/"
+                },
+                {
+                    name: "Подготовка к поступлению",
+                    url: "https://new.vyatsu.ru/admission/prep_admission/"
+                },
+                {
+                    name: "Информация о приёме",
+                    url: "https://new.vyatsu.ru/admission/admission_info/"
+                },
+                {
+                    name: "Календарь абитуриента",
+                    url: "https://new.vyatsu.ru/admission/admission_terms/"
+                },
+                {
+                    name: "Специальности и направления",
+                    url: "https://new.vyatsu.ru/admission/admission_special/"
+                },
+                {
+                    name: "Специальности и направления",
+                    url: "https://new.vyatsu.ru/admission/admission_special/"
+                },
+            ],
+        },
+        {
+            name: "Cотруднику",
+            links: [{
+                name: "Ссылка на страницу сотрудников",
+                url: "https://www.vyatsu.ru/sotrudniku.html"
+            }, ],
+        },
+    ];
+
+    const changeLeftMenu = (number) => {
+        if (number === leftMenuInfo.length) {
+            currentLeftMenu = 0
+        } else if (number < 0) {
+            currentLeftMenu = leftMenuInfo.length - 1;
+        } else currentLeftMenu = number
+
+        leftMenuNumberTop.text(`${currentLeftMenu+1}.`);
+        leftMenuName.text(leftMenuInfo[currentLeftMenu].name)
+
+        leftMenuItems.children().remove()
+        leftMenuItems.append(leftMenuInfo[currentLeftMenu].links.map((link)=>`
+            <a href=${link.url} draggable=false class="w-full h-16 px-5 border-t first:border-t-0 border-white flex justify-start items-center text-white text-[14px] sm:text-base cursor-pointer ">
+                ${link.name}
+            </a>
+        `))
+
+        numberMenu.children().removeClass('font-bold text-lg')
+        $(`#number-menu-${currentLeftMenu}`).addClass('font-bold text-lg')
+    }
+
+    $(document).ready(() => {
+        numberMenu.append(leftMenuInfo.map((leftMenusItem, index) => {
+            return `
+            <div id="number-menu-${index}" class="number-menu-item cursor-pointer mr-4 last:mr-0">
+                ${index+1}
+            </div>
+            `
+        }))
+
+        $(".number-menu-item").click((number) =>
+            changeLeftMenu(parseInt($(number.target).attr('id').split('-')[2])))
+
+        leftMenuLeftArrow.click(() => changeLeftMenu(--currentLeftMenu))
+        leftMenuRightArrow.click(() => changeLeftMenu(++currentLeftMenu))
+
+        changeLeftMenu(currentLeftMenu);
+    });
+</script>
+
+<script>
+    /*
+        <a draggable=false href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
+            <div>Расписание</div>
+        </a>
+     */
+    const favoritePagesInfo = [
+        {
+            name:"Расписание",
+            url:"#"
+        },
+        {
+            name:"Зачетная книжка",
+            url:"#"
+        },
+        {
+            name:"Опросы",
+            url:"#"
+        },
+        {
+            name:"Календарь абитуриента",
+            url:"#"
+        },
+        {
+            name:"Специальности",
+            url:"#"
+        },
+        {
+            name:"День открытых дверей",
+            url:"#"
+        },
+    ]
+    $('#favorite-pages').append(favoritePagesInfo.map((page)=>`
+        <a draggable=false href="${page.url}" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
+            <div>${page.name}</div>
+        </a>
+    `))
+
 </script>
