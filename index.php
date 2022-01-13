@@ -188,14 +188,18 @@ require_once("./header.php")
     const close = $(".left-menu-close")
 
     const onClickBurger = () => {
-        $(leftMenu).css("display", "block")
-        $(topBar).css("display", "none")
+        leftMenu.removeClass('hidden')
+        leftMenu.addClass("block")
+
+        topBar.addClass("hidden")
         $("body").css("overflow", "hidden")
     }
 
     const onClickClose = () => {
-        $(leftMenu).css("display", "none")
-        $(topBar).css("display", "flex")
+        leftMenu.addClass("hidden")
+
+        topBar.removeClass('hidden')
+        topBar.addClass("flex")
         $("body").css("overflow", "auto")
     }
 
@@ -204,7 +208,7 @@ require_once("./header.php")
 </script>
 
 <!-- динамическое заполнение и работа left-menu -->
-<script>  
+<script>
     const numberMenu = $('#number-menu')
     const leftMenuName = $('.left-menu-name')
     const leftMenuItems = $('#left-menu-items')
@@ -269,7 +273,7 @@ require_once("./header.php")
         leftMenuName.text(leftMenuInfo[currentLeftMenu].name)
 
         leftMenuItems.children().remove()
-        leftMenuItems.append(leftMenuInfo[currentLeftMenu].links.map((link)=>`
+        leftMenuItems.append(leftMenuInfo[currentLeftMenu].links.map((link) => `
             <a href=${link.url} draggable=false class="w-full h-16 px-5 border-t first:border-t-0 border-white flex justify-start items-center text-white text-[14px] sm:text-base cursor-pointer ">
                 ${link.name}
             </a>
@@ -304,36 +308,34 @@ require_once("./header.php")
             <div>Расписание</div>
         </a>
      */
-    const favoritePagesInfo = [
-        {
-            name:"Расписание",
-            url:"#"
+    const favoritePagesInfo = [{
+            name: "Расписание",
+            url: "#"
         },
         {
-            name:"Зачетная книжка",
-            url:"#"
+            name: "Зачетная книжка",
+            url: "#"
         },
         {
-            name:"Опросы",
-            url:"#"
+            name: "Опросы",
+            url: "#"
         },
         {
-            name:"Календарь абитуриента",
-            url:"#"
+            name: "Календарь абитуриента",
+            url: "#"
         },
         {
-            name:"Специальности",
-            url:"#"
+            name: "Специальности",
+            url: "#"
         },
         {
-            name:"День открытых дверей",
-            url:"#"
+            name: "День открытых дверей",
+            url: "#"
         },
     ]
-    $('#favorite-pages').append(favoritePagesInfo.map((page)=>`
+    $('#favorite-pages').append(favoritePagesInfo.map((page) => `
         <a draggable=false href="${page.url}" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
             <div>${page.name}</div>
         </a>
     `))
-
 </script>
