@@ -2,8 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-.top-menu {
-  width: calc(100% - 18rem);
+/* sm */
+@media (min-width: 640px) {
+  .top-menu {
+    width: calc(100% - 18rem);
+  }
+
+  .left-menu-cont-items {
+    height: calc(90vh - 31rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .left-menu-cont-items {
+    height: calc(100vh - 31rem);
+  }
 }
 
 .scrollbar-hide {
@@ -15,6 +28,25 @@
   height: 0;
 }
 
-.left-menu-cont-items {
-  height: calc(90vh - 31rem);
+.scrollbar-color-main {
+  scrollbar-color: rgba(0, 0, 0, 0.3) #2e9ecb;
+}
+
+.scrollbar-thin {
+  scroll-behavior: smooth;
+  scrollbar-width: 5px;
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 5px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
