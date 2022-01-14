@@ -59,7 +59,7 @@ require_once("./header.php")
     </div>
 
     <!-- feedback mobile -->
-    <div class="flex sm:hidden fixed h-20 w-full bottom-0 justify-center items-center">
+    <div class="flex sm:hidden fixed h-28 w-full bottom-0 justify-center items-center">
         <button class="border-2 border-white rounded-xl h-[50px] w-[240px] flex justify-center items-center">
             <div class="text-[14px] text-white">
                 Оставить отзыв о странице
@@ -303,11 +303,7 @@ require_once("./header.php")
 </script>
 
 <script>
-    /*
-        <a draggable=false href="#" class="cursor-pointer mr-4 last:mr-0 text-sm sm:text-base border hover:bg-[#2E9ECB] hover:text-white py-1 px-4 rounded-xl flex justify-center items-center">
-            <div>Расписание</div>
-        </a>
-     */
+    // ! для отладки
     const favoritePagesInfo = [{
             name: "Расписание",
             url: "#"
