@@ -11,11 +11,18 @@
   .left-menu-cont-items {
     height: calc(90vh - 31rem);
   }
+  #body {
+    width: calc(100% - 18rem);
+  }
 }
-
+/*  */
 @media (max-width: 640px) {
   .left-menu-cont-items {
     height: calc(100vh - 31rem);
+  }
+
+  #body {
+    width: 100%;
   }
 }
 
@@ -34,7 +41,6 @@
 
 .scrollbar-thin {
   scroll-behavior: smooth;
-  scrollbar-width: 5px;
   scrollbar-width: thin;
 }
 
