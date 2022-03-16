@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Личный кабинет</title>
-    <link href="./output.css" rel="stylesheet">
+    <link href="/../output.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
@@ -15,7 +15,7 @@
     <!-- logo -->
     <div class="h-20 sm:h-36 px-7 sm:px-0 flex justify-between sm:justify-center items-center sm:border-b border-white ">
         <div class="flex flex-row items-center justify-evenly">
-            <img class="h-10 sm:h-14" src="/assets/logo.svg" alt="logo" draggable="false"/>
+            <img class="h-10 sm:h-14" src="../assets/logo.svg" alt="logo" draggable="false"/>
             <div class="ml-3 flex flex-col text-white font-bold leading-4 sm:leading-5 text-sm sm:text-base ">
                 <div>Вятский</div>
                 <div>Государственный</div>
@@ -23,21 +23,21 @@
             </div>
         </div>
         <div class="cursor-pointer left-menu-close sm:hidden w-10 h-10 flex justify-center items-center">
-            <img src="assets/close.svg" alt="close" draggable="false"/>
+            <img src="../assets/close.svg" alt="close" draggable="false"/>
         </div>
     </div>
 
     <!-- arrow menu -->
     <div class="w-full h-16 border-b border-white justify-evenly items-center text-white flex">
         <div id="left-menu-left-arrow" class="cursor-pointer w-6 flex justify-center">
-            <img src="assets/arrow_left.svg" alt="left" draggable="false"/>
+            <img src="../assets/arrow_left.svg" alt="left" draggable="false"/>
         </div>
         <div class="flex">
             <span id="left-menu-number-top" class="mr-1"></span>
             <div class="left-menu-name">Текст</div>
         </div>
         <div id="left-menu-right-arrow" class="cursor-pointer w-6 flex justify-center">
-            <img class="rotate-180" src="assets/arrow_left.svg" alt="right" draggable="false"/>
+            <img class="rotate-180" src="../assets/arrow_left.svg" alt="right" draggable="false"/>
         </div>
     </div>
 
@@ -93,26 +93,26 @@
         <div class=" w-full flex border-b px-3">
             <input class="w-full border-0 outline-0 leading-10" placeholder="Поиск услуг, информации и т.п."/>
             <div class="cursor-pointer flex items-center justify-center w-6">
-                <img src="./assets/search.svg" alt="search" draggable="false"/>
+                <img src="../assets/search.svg" alt="search" draggable="false"/>
             </div>
         </div>
         <div class="relative flex items-center mt-3">
             <div class="left-arrow hidden justify-start absolute h-full w-10 bg-gradient-to-l from-transparent to-white">
-                <img src="./assets/arrow_down.svg" style="transform:rotate(90deg); width: 20px;" alt="left-arrow"
+                <img src="../assets/arrow_down.svg" style="transform:rotate(90deg); width: 20px;" alt="left-arrow"
                      draggable="false"/>
             </div>
             <div class="right-arrow hidden justify-end absolute right-0 h-full w-10 bg-gradient-to-r from-transparent to-white">
-                <img src="./assets/arrow_down.svg" style="transform:rotate(-90deg); width: 20px;" alt="right-arrow"
+                <img src="../assets/arrow_down.svg" style="transform:rotate(-90deg); width: 20px;" alt="right-arrow"
                      draggable="false"/>
             </div>
             <div id="favorite-pages" class="flex overflow-auto scrollbar-hide whitespace-nowrap"></div>
         </div>
     </div>
     <!-- user -->
-    <div class="user-zone hidden sm:flex items-center justify-center px-6  w-full sm:w-1/4 md:w-1/4 xl:w-1/3 2xl:w-1/4">
+    <div class="hidden sm:flex items-center justify-evenly px-6  w-full sm:w-1/4 md:w-1/4 xl:w-1/3 2xl:w-1/4">
         <!-- avatar -->
         <div class="flex items-center justify-center w-16 relative">
-            <img class="rounded-full" src="./assets/2021-12-06 10.53.01.jpg" alt="avatar"/>
+            <img class="rounded-full" src="../assets/2021-12-06 10.53.01.jpg" alt="avatar"/>
             <div class="bg-red-600 rounded-full px-2 absolute right-0 top-0 text-white text-sm flex items-center justify-center">
                 <div>1</div>
             </div>
@@ -124,51 +124,23 @@
                 <div>usr22451</div>
                 <div>Сотрудник</div>
             </div>
-        </div>
-        <!-- user-menu -->
-        <div class="hidden user-menu fixed top-[90%] right-[10%] rounded-2xl py-4 px-5 min-w-[300px] min-h-[290px] bg-white z-50 shadow-[0px_0px_30px_0px_rgba(0,0,0,0.1)]">
-            <div class="w-0 h-0 border-transparent border-l-[15px] border-r-[15px] border-b-[15px] border-b-white fixed top-[80%] right-[15%]"></div>
-            <div class="flex flex-row">
-                <img class="rounded-full w-14 mr-[12px]" src="./assets/2021-12-06 10.53.01.jpg" alt="avatar"/>
-                <div class="flex flex-row justify-between w-[100%]">
-                    <div class="flex flex-col justify-center w-[100%]">
-                        <div class="flex flex-row w-[100%] justify-between items-center">
-                            <div class='text-[#2E9ECB] text-lg whitespace-nowrap mr-5'>
-                                Д. А. Кардаков
-                            </div>
-                            <div class="text-[#BFBFBF] text-[12px]">
-                                usr22451
-                            </div>
-                        </div>
-                        <div>
-                            Студент
-                        </div>
-                    </div>
-
+            <div class="cursor-pointer flex justify-center items-center">
+                <div class="w-10 h-10 flex justify-center items-center">
+                    <img src="../assets/arrow_down.svg" alt="down-arrow" draggable="false"/>
                 </div>
             </div>
-            <div class="border mt-[22px]"></div>
-            <div class="flex flex-col">
-                <div class="mt-[10px] hover:cursor-pointer">Персональные данные</div>
-                <div class="mt-[10px] hover:cursor-pointer">Портфолио</div>
-                <div class="mt-[10px] hover:cursor-pointer">Инструкции</div>
-                <div class="mt-[10px] hover:cursor-pointer">Сертификаты COVID19</div>
-            </div>
-            <div class="border mt-[16px]"></div>
-            <div class="mt-[10px] hover:cursor-pointer">Выйти</div>
         </div>
     </div>
 </div>
-
 
 <!-- top-bar for mobile -->
 <div id="top-bar"
      class="fixed top-0 h-20 w-full bg-[#2E9ECB] rounded-b-2xl z-50 flex sm:hidden justify-between items-center px-7">
     <div class="cursor-pointer burger w-10 h-10 flex justify-center items-center">
-        <img class="w-6" src="./assets/burger.svg" alt="menu"/>
+        <img class="w-6" src="../assets/burger.svg" alt="menu"/>
     </div>
     <div class="flex items-center justify-center w-10 relative">
-        <img class="rounded-full" src="./assets/2021-12-06 10.53.01.jpg" alt="avatar-mobile"/>
+        <img class="rounded-full" src="../assets/2021-12-06 10.53.01.jpg" alt="avatar-mobile"/>
         <div class="bg-red-600 rounded-full px-1 absolute right-0 top-0 text-white text-xs flex items-center justify-center">
             <div>1</div>
         </div>
@@ -177,7 +149,59 @@
 
 <!-- body page -->
 <div id="body" class="absolute text-justify top-48 sm:top-36 sm:left-72 p-4 sm:p-10">
+    <!--  опросы  -->
+    <div>
+        <!--  опрос активный  -->
+        <div class="min-h-[60px] bg-[#2E9ECB]/[0.15] flex mb-4 last:mb-0 rounded-xl ">
+            <div class="hidden lg:block w-[8px] min-h-[60px] bg-[#2E9ECB] rounded-tl-xl rounded-bl-xl"></div>
+            <div class="w-full flex flex-col lg:flex-row justify-between lg:items-center p-5 lg:p-0 lg:pl-4">
+                <!-- наименование опроса -->
+                <div class="text-xl lg:text-base lg:w-2/3">123</div>
+                <!-- кнопки -->
+                <div>
+                    <div class="text-white text-xl lg:text-base bg-[#2E9ECB] mt-4 lg:mt-0 min-h-[60px] p-4 md:min-w-[170px] rounded-xl flex justify-center items-center drop-shadow-lg md:drop-shadow-none cursor-pointer mr-6 last:mr-0">
+                        <div>Пройти</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  опрос неактивный  -->
+        <div class="min-h-[60px] bg-[#E7E7E7]/[0.15] flex mb-4 last:mb-0 rounded-xl ">
+            <div class="hidden lg:block w-[8px] min-h-[60px] bg-[#E7E7E7] rounded-tl-xl rounded-bl-xl"></div>
+            <div class="w-full flex flex-col lg:flex-row justify-between lg:items-center p-5 lg:p-0 lg:pl-4">
+                <!-- наименование опроса -->
+                <div class="text-xl lg:text-base lg:w-2/3">
+                    Очень интересное описание опроса,<br> которое желательно <br> займет много места
+                </div>
+                <!-- кнопки -->
+                <div class = "flex flex-row justify-evenly h-full">
+                    <div class="text-black text-xl lg:text-base bg-[#E7E7E7] mt-4 lg:mt-0 min-h-[60px] p-4 only:w-full md:min-w-[170px] rounded-xl flex justify-center items-center drop-shadow-lg lg:drop-shadow-none cursor-pointer mr-6 last:mr-0">
+                        <div>Пройти</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  опрос неактивный + результаты -->
+        <div class="min-h-[60px] bg-[#E7E7E7]/[0.15] flex mb-4 last:mb-0 rounded-xl ">
+            <div class="hidden lg:block w-[8px] min-h-[60px] bg-[#E7E7E7] rounded-tl-xl rounded-bl-xl"></div>
+            <div class="w-full flex flex-col lg:flex-row justify-between lg:items-center p-5 lg:p-0 lg:pl-4">
+                <!-- наименование опроса -->
+                <div class="text-xl lg:text-base lg:w-2/3">
+                    Очень интересное описание опроса,<br> которое желательно <br> займет много места
+                </div>
+                <!-- кнопки -->
+                <div class = "flex flex-row justify-evenly h-full">
+                    <div class="text-black text-xl lg:text-base bg-[#E7E7E7] mt-4 lg:mt-0 min-h-[60px] w-2/4 only:w-full md:min-w-[170px] rounded-xl flex justify-center items-center drop-shadow-lg lg:drop-shadow-none cursor-pointer mr-6 last:mr-0">
+                        <div>Пройти</div>
+                    </div>
 
+                    <div class="text-black text-xl lg:text-base bg-[#E7E7E7] mt-4 lg:mt-0 min-h-[60px] w-2/4 only:w-full md:min-w-[170px] rounded-xl flex justify-center items-center drop-shadow-lg lg:drop-shadow-none cursor-pointer mr-6 last:mr-0">
+                        <div>Результаты</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- TODO: использован jquery, переписать на vue.js -->
@@ -374,15 +398,4 @@
             <div>${page.name}</div>
         </a>
     `))
-</script>
-
-<!-- показ меню пользователя при наведении -->
-<script>
-    const userZone = document.getElementsByClassName('user-zone')[0];
-    const userMenu = document.getElementsByClassName('user-menu')[0];
-
-    const handler = (info) => (info.type === 'mouseover') ? userMenu.classList.remove('hidden') : userMenu.classList.add('hidden')
-
-    userZone.onmouseover = userMenu.onmouseover = handler
-    userZone.onmouseout = userMenu.onmouseout = handler
 </script>
