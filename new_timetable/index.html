@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Расписание</title>
+    <link href="./../output.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <!-- for students -->
+    <div class="container mx-auto p-5 md:px-0">
+        <!-- day of week -->
+        <div class="bg-[#1414140D] px-5 md:px-16 py-7 text-lg font-normal">Пятница 07.10.22</div>
+        <!-- line -->
+        <div class="border-[0.5px] border-[#1D1D1D80]"></div>
+        <!-- classes -->
+        <div class="bg-[#1414140D] px-5 md:px-16 py-7 space-y-6">
+            <!-- class -->
+            <div class="flex flex-col space-y-2">
+                <!-- time of class -->
+                <div class="font-semibold text-base">
+                    Пара: 2 10:00-11:30
+                </div>
+                <!-- name of class -->
+                <div class="text-sm">
+                    Гистология с основами эмбриологии, Лекция, Позолотина Надежда Владимировна, 1-120
+                </div>
+            </div>
+            <!-- class -->
+            <div class="flex flex-col space-y-2">
+                <!-- time of class -->
+                <div class="font-semibold text-base">
+                    Пара: 3 11:45-13:15
+                </div>
+                <!-- name of class -->
+                <div class="text-sm">
+                    Гистология с основами эмбриологии, Лекция, Позолотина Надежда Владимировна, 1-120
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- for teachers -->
+    <div class="container mx-auto p-5 md:px-0">
+        <!-- day of week -->
+        <div class="bg-[#1414140D] px-5 md:px-16 py-7 text-lg font-normal">Пятница 07.10.22</div>
+        <!-- line -->
+        <div class="border-[0.5px] border-[#1D1D1D80]"></div>
+        <!-- classes -->
+        <div class="bg-[#1414140D] px-5 md:px-16 py-7 space-y-6">
+            <!-- class -->
+            <div class="flex flex-col space-y-2">
+                <!-- time of class -->
+                <div class="font-semibold text-base">
+                    Пара: 2 10:00-11:30
+                </div>
+                <!-- name of class -->
+                <div class="text-sm">
+                    Гистология с основами эмбриологии, Лекция, Позолотина Надежда Владимировна, 1-120
+                </div>
+                <!-- students on class -->
+                <div>
+                    <!-- text + arrow -->
+                    <div class="flex items-center cursor-pointer w-fit" onclick="onStudentsClick(this)">
+                        <div class="text-xs">Студенты</div>
+                        <div class="ml-2"><img class="student-arrow" src="../assets/arrow_black.svg" /></div>
+                    </div>
+                    <!-- list of students -->
+                    <div class="students-list hidden mt-4 grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- class -->
+            <div class="flex flex-col space-y-2">
+                <!-- time of class -->
+                <div class="font-semibold text-base">
+                    Пара: 3 11:45-13:15
+                </div>
+                <!-- name of class -->
+                <div class="text-sm">
+                    Гистология с основами эмбриологии, Лекция, Позолотина Надежда Владимировна, 1-120
+                </div>
+                <!-- students on class -->
+                <div>
+                    <!-- text + arrow -->
+                    <div class="flex items-center cursor-pointer w-fit" onclick="onStudentsClick(this)">
+                        <div class="text-xs">Студенты</div>
+                        <div class="ml-2"><img class="student-arrow rotate-180" src="../assets/arrow_black.svg" /></div>
+                    </div>
+                    <!-- list of students -->
+                    <div class="students-list mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                        <div class="text-sm md:font-semibold">
+                            Иванов Иван Иванович
+                            <br class="md:hidden"/>
+                            ИСПк-401-52-00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- for headman -->
+    <div class="container mx-auto p-5 md:px-0">
+        <!-- day of week -->
+        <div class="bg-[#1414140D] px-5 md:px-16 py-7 text-lg font-normal">Пятница 07.10.22</div>
+        <!-- line -->
+        <div class="border-[0.5px] border-[#1D1D1D80]"></div>
+        <!-- classes -->
+        <div class="bg-[#1414140D] px-5 md:px-16 py-7 space-y-6">
+            <!-- class -->
+            <div class="flex flex-col space-y-2">
+                <!-- time of class -->
+                <div class="font-semibold text-base">
+                    Пара: 3 11:45-13:15
+                </div>
+                <!-- name of class -->
+                <div class="text-sm">
+                    Гистология с основами эмбриологии, Лекция, Позолотина Надежда Владимировна, 1-120
+                </div>
+                <!-- students on class -->
+                <div>
+                    <!-- text + arrow -->
+                    <div class="flex items-center cursor-pointer w-fit" onclick="onStudentsClick(this)">
+                        <div class="text-xs">Студенты</div>
+                        <div class="ml-2"><img class="student-arrow rotate-180" src="../assets/arrow_black.svg" /></div>
+                    </div>
+                    <!-- presence -->
+                    <div class="check-all">
+                        
+                    </div>
+                    <!-- list of students -->
+                    <div class="students-list mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="text-sm md:font-semibold">
+                            <div>
+                                Иванов Иван Иванович
+                                <br class="md:hidden"/>
+                                ИСПк-401-52-00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    const onStudentsClick = (studentsBtn) => {
+        studentsBtn.querySelectorAll(".student-arrow")[0].classList.toggle("rotate-180")
+        studentsBtn.parentNode.querySelectorAll(".students-list")[0].classList.toggle("hidden")
+        studentsBtn.parentNode.querySelectorAll(".students-list")[0].classList.toggle("grid")
+    }
+</script>
