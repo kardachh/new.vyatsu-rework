@@ -72,42 +72,42 @@
                     <div class="students-list hidden mt-4 grid-cols-1 md:grid-cols-3 gap-4">
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                     </div>
@@ -134,42 +134,42 @@
                     <div class="students-list mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                         <div class="text-sm md:font-semibold">
                             Иванов Иван Иванович
-                            <br class="md:hidden"/>
+                            <br class="md:hidden" />
                             ИСПк-401-52-00
                         </div>
                     </div>
@@ -204,16 +204,34 @@
                         <div class="ml-2"><img class="student-arrow rotate-180" src="../assets/arrow_black.svg" /></div>
                     </div>
                     <!-- presence -->
-                    <div class="check-all">
-                        
+                    <div class="check-all space-y-2 mt-2 flex flex-col">
+                        <input type="radio" id="test1" name="radio-group-all" checked>
+                        <label for="test1">Все присутствовали</label>
+
+                        <input type="radio" id="test2" name="radio-group-all">
+                        <label for="test2">Никто не присутствовал</label>
+
+                        <input type="radio" id="test3" name="radio-group-all">
+                        <label for="test3">Про всех не знаю</label>
                     </div>
                     <!-- list of students -->
                     <div class="students-list mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div class="text-sm md:font-semibold">
-                            <div>
+                        <!-- student -->
+                        <div>
+                            <div class="text-sm md:font-semibold">
                                 Иванов Иван Иванович
-                                <br class="md:hidden"/>
+                                <br class="md:hidden" />
                                 ИСПк-401-52-00
+                            </div>
+                            <div class="space-y-2 mt-2 flex flex-col">
+                                <input type="radio" id="test4" name="radio-group1" checked>
+                                <label for="test4">Присутствовал</label>
+
+                                <input type="radio" id="test5" name="radio-group1">
+                                <label for="test5">Не присутствовал</label>
+
+                                <input type="radio" id="test6" name="radio-group1">
+                                <label for="test6">Не знаю</label>
                             </div>
                         </div>
                     </div>
@@ -230,5 +248,6 @@
         studentsBtn.querySelectorAll(".student-arrow")[0].classList.toggle("rotate-180")
         studentsBtn.parentNode.querySelectorAll(".students-list")[0].classList.toggle("hidden")
         studentsBtn.parentNode.querySelectorAll(".students-list")[0].classList.toggle("grid")
+        studentsBtn.parentNode.querySelectorAll(".check-all")[0] && studentsBtn.parentNode.querySelectorAll(".check-all")[0].classList.toggle("hidden")
     }
 </script>
