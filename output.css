@@ -1476,7 +1476,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {
-  content: url('/assets/check_mark.svg');
+  content: url('./assets/check_mark.svg');
   width: 12px;
   height: 12px;
   /* background: #3C77FF; */
